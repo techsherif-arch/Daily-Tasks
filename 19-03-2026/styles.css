@@ -1,0 +1,31 @@
+ /* Element Selector */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ID Selector */
+#header {
+    color: #2c3e50;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Class Selector - Intro */
+.intro {
+    font-style: italic;
+}
+
+/* Class Selector - Highlight */
+.highlight {
+    background-color: #f0f8ff;
+    padding: 8px;
+}
+
+/* Class Selector - Box */
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 20px;
+    background-color: #fafafa;
+}
