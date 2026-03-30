@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSK vs KKR</title>
+</head>
+
+<body>
+
+<script>
+
+document.body.style.margin = "0";
+document.body.style.display = "flex";
+document.body.style.height = "100vh";
+document.body.style.fontFamily = "Arial";
+
+let left = document.createElement("div");
+left.style.width = "50%";
+left.style.background = "linear-gradient(135deg, #ffd60a, #ffb703, #ffcc00)";
+left.style.display = "flex";
+left.style.flexDirection = "column";
+left.style.justifyContent = "center";
+left.style.alignItems = "center";
+
+let cskTitle = document.createElement("h1");
+cskTitle.innerText = "Chennai Super Kings";
+cskTitle.style.color = "#2c2c2c";
+cskTitle.style.fontSize = "28px";
+cskTitle.style.letterSpacing = "2px";
+cskTitle.style.textShadow = "2px 2px 5px rgba(0,0,0,0.3)";
+cskTitle.style.marginBottom = "20px";
+
+let cskBox = document.createElement("div");
+cskBox.style.width = "150px";
+cskBox.style.height = "150px";
+cskBox.style.background = "linear-gradient(135deg, #fff176, #ffd60a)";
+cskBox.style.borderRadius = "25px";
+cskBox.style.display = "flex";
+cskBox.style.justifyContent = "center";
+cskBox.style.alignItems = "center";
+cskBox.style.boxShadow = "0 15px 35px rgba(0,0,0,0.6)";
+
+let cskLogo = document.createElement("img");
+cskLogo.src = "https://i.postimg.cc/kgcZrsfC/chennai_super_kings_logo_csk_logo_icon_on_transparent_background_free_png.png";
+cskLogo.style.width = "95px";
+
+cskBox.appendChild(cskLogo);
+left.appendChild(cskTitle);
+left.appendChild(cskBox);
+
+let right = document.createElement("div");
+right.style.width = "50%";
+right.style.background = "linear-gradient(135deg, #4b0082, #800080, #2e003e)";
+right.style.display = "flex";
+right.style.flexDirection = "column";
+right.style.justifyContent = "center";
+right.style.alignItems = "center";
+
+let kkrTitle = document.createElement("h1");
+kkrTitle.innerText = "Kolkata Knight Riders";
+kkrTitle.style.color = "gold";
+kkrTitle.style.fontSize = "28px";
+kkrTitle.style.letterSpacing = "2px";
+kkrTitle.style.textShadow = "2px 2px 8px rgba(0,0,0,0.5)";
+kkrTitle.style.marginBottom = "20px";
+
+let kkrBox = document.createElement("div");
+kkrBox.style.width = "150px";
+kkrBox.style.height = "150px";
+kkrBox.style.background = "linear-gradient(135deg, #a020f0, #6a0dad)";
+kkrBox.style.borderRadius = "25px";
+kkrBox.style.display = "flex";
+kkrBox.style.justifyContent = "center";
+kkrBox.style.alignItems = "center";
+kkrBox.style.boxShadow = "0 15px 35px rgba(0,0,0,0.6)";
+
+let kkrLogo = document.createElement("img");
+kkrLogo.src = "https://i.postimg.cc/kg36rFDj/1000112169-removebg-preview.png";
+kkrLogo.style.width = "95px";
+
+kkrBox.appendChild(kkrLogo);
+right.appendChild(kkrTitle);
+right.appendChild(kkrBox);
+
+document.body.appendChild(left);
+document.body.appendChild(right);
+
+</script>
+
+</body>
+</html>
