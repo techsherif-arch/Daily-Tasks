@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 1</title>
+    <style>
+        body {
+            background-color: #FFD700;
+            font-family: Arial;
+            text-align: center;
+        }
+        .box {
+            background-color: white;
+            margin: 100px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Change Text</h2>
+    <p id="demo">Original Text: Hello World</p>
+    <button onclick="changeText()">Change</button>
+</div>
+
+<script>
+function changeText() {
+    document.getElementById("demo").innerText = "New Text: Text Changed Successfully!";
+}
+</script>
+
+</body>
+</html>

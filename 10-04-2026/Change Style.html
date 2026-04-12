@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2</title>
+    <style>
+        body {
+            background-color: #3DDC84;
+            font-family: Arial;
+            text-align: center;
+        }
+        .box {
+            background-color: white;
+            margin: 100px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Change Style</h2>
+    <p id="text">Original Style: Normal Text</p>
+    <button onclick="changeStyle()">Change</button>
+</div>
+
+<script>
+function changeStyle() {
+    let el = document.getElementById("text");
+    el.innerText = "New Style: Color Changed!";
+    el.style.color = "blue";
+    el.style.fontWeight = "bold";
+}
+</script>
+
+</body>
+</html>

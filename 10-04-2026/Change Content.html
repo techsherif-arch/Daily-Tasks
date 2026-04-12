@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3</title>
+    <style>
+        body {
+            background-color: #121212;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+        .box {
+            background-color: #1e1e1e;
+            margin: 100px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Change Content</h2>
+    <p id="para">Old Content: Welcome User</p>
+    <button onclick="changeContent()">Change</button>
+</div>
+
+<script>
+function changeContent() {
+    document.getElementById("para").innerHTML = "<b>New Content: Content Updated!</b>";
+}
+</script>
+
+</body>
+</html>

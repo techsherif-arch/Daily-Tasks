@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 23 JS Task</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f3fc6c;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .box {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        /* Different colors for each task */
+        #task1 { background-color: #ff6b6b; }
+        #task2 { background-color: #4ecdc4; }
+        #task3 { background-color: #1a73e8; }
+        #task4 { background-color: #9b59b6; }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Day 23 - JavaScript Tasks</h1>
+
+    <!-- Task 1 -->
+    <div class="box" id="task1">
+        <h2>Task 1: Change Text</h2>
+        <p id="text1">Hello World</p>
+        <button onclick="changeText()">Change Text</button>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="box" id="task2">
+        <h2>Task 2: Change Style</h2>
+        <p id="text2">This is styled text</p>
+        <button onclick="changeStyle()">Change Style</button>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="box" id="task3">
+        <h2>Task 3: Change Content</h2>
+        <p id="text3">Old Content</p>
+        <button onclick="changeContent()">Change Content</button>
+    </div>
+
+    <!-- Task 4 -->
+    <div class="box" id="task4">
+        <h2>Task 4: Change Color & Size</h2>
+        <p id="text4">Styled Text</p>
+        <button onclick="changeDesign()">Change Design</button>
+    </div>
+
+    <!-- Personal Intro Box -->
+    <div class="box" style="background-color:#2ecc71;">
+        <h2>About Me</h2>
+        <p id="intro">Hi, I am Sharif. I am a Front-End Developer.</p>
+        <button onclick="changeIntro()">Change Role</button>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("text1").innerText = "Text Changed Successfully!";
+        }
+
+        function changeStyle() {
+            let el = document.getElementById("text2");
+            el.style.color = "black";
+            el.style.backgroundColor = "yellow";
+        }
+
+        function changeContent() {
+            document.getElementById("text3").innerHTML = "<b>New Content Added!</b>";
+        }
+
+        function changeDesign() {
+            let el = document.getElementById("text4");
+            el.style.color = "orange";
+            el.style.fontSize = "25px";
+        }
+
+        function changeIntro() {
+            document.getElementById("intro").innerText = "Hi, I am Sharif. I am a Software Developer.";
+        }
+    </script>
+
+</body>
+</html>

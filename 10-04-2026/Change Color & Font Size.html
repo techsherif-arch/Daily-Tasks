@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4</title>
+    <style>
+        body {
+            background-color: #6A0DAD;
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+        .box {
+            background-color: white;
+            color: black;
+            margin: 100px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Change Color & Size</h2>
+    <p id="styleText">Original: Normal Size Text</p>
+    <button onclick="changeDesign()">Change</button>
+</div>
+
+<script>
+function changeDesign() {
+    let el = document.getElementById("styleText");
+    el.innerText = "New: Bigger & Colored Text!";
+    el.style.color = "red";
+    el.style.fontSize = "28px";
+}
+</script>
+
+</body>
+</html>
