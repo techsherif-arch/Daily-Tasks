@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filter Names</title>
+</head>
+<body>
+
+<h3>Filter Names</h3>
+
+<input type="text" id="searchBox" placeholder="Type a name..." onkeyup="filterNames()">
+
+<ul id="nameList">
+<li>Arun</li>
+<li>Bala</li>
+<li>Charan</li>
+<li>Divya</li>
+<li>Elan</li>
+</ul>
+
+<script>
+function filterNames() {
+let input = document.getElementById("searchBox").value.toLowerCase();
+let ul = document.getElementById("nameList");
+let li = ul.getElementsByTagName("li");
+
+for (let i = 0; i < li.length; i++) {
+let text = li[i].textContent.toLowerCase();
+if (text.includes(input)) {
+li[i].style.display = "";
+} else {
+li[i].style.display = "none";
+}
+}
+}
+</script>
+
+</body>
+</html>
